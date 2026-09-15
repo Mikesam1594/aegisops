@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+langchain
+langchain-core
+langchain-ollama
+ollama
+qdrant-client
+sentence-transformers
+scikit-learn
