@@ -1,0 +1,50 @@
+[
+  {
+    "article_id": "KB-001",
+    "title": "Troubleshooting API Authentication Failures",
+    "category": "authentication",
+    "content": "When an application cannot authenticate with an external API, first verify that the configured credentials are valid and have not expired. Check authentication logs for rejected requests, confirm that the expected authentication method is configured, and verify that the account or service identity has the required permissions. If credentials were recently rotated, update the integration configuration and retest authentication."
+  },
+  {
+    "article_id": "KB-002",
+    "title": "Diagnosing Data Synchronization Failures",
+    "category": "synchronization",
+    "content": "When scheduled synchronization fails, review synchronization logs for the first reported error and identify whether the failure started after a configuration or source-system change. Verify field mappings, filters, connection settings, and authentication credentials. If the configuration is corrected, restart the synchronization process and verify that new records are successfully transferred."
+  },
+  {
+    "article_id": "KB-003",
+    "title": "Investigating Slow Application or Dashboard Performance",
+    "category": "performance",
+    "content": "For slow application or dashboard performance, determine whether the issue affects all users or only specific requests. Review query execution time, application logs, database resource usage, and recent configuration changes. Identify expensive queries or resource bottlenecks, optimize the affected operations, and validate that response times return to the expected range."
+  },
+  {
+    "article_id": "KB-004",
+    "title": "Troubleshooting External API Timeouts",
+    "category": "integration",
+    "content": "When requests to an external API time out, verify network connectivity and endpoint availability first. Review API response times, request size, timeout configuration, retry behavior, and rate limits. If large requests consistently exceed the configured timeout, reduce batch size or adjust the timeout according to the integration requirements."
+  },
+  {
+    "article_id": "KB-005",
+    "title": "Resolving Incorrect Integration Field Mapping",
+    "category": "configuration",
+    "content": "When incoming data is populated in the wrong destination field, compare the source payload with the configured field mapping. Verify field names, data types, transformation rules, and recently introduced custom fields. Correct the mapping and validate the result using a controlled test record before resuming normal processing."
+  },
+  {
+    "article_id": "KB-006",
+    "title": "Investigating Missing Records After Synchronization",
+    "category": "synchronization",
+    "content": "When expected records are missing after synchronization, compare the source record count with the destination count and review synchronization logs. Check filters, synchronization criteria, permissions, field mappings, and rejected-record logs. Correct any filtering or mapping issue and run a controlled synchronization to verify that the missing records are transferred."
+  },
+  {
+    "article_id": "KB-007",
+    "title": "Troubleshooting Connection Failures to External Systems",
+    "category": "integration",
+    "content": "For failures connecting to an external system, verify the configured endpoint, DNS resolution, network connectivity, firewall rules, proxy settings, and certificates. Check application logs for connection errors and confirm that the external service is reachable from the deployment environment. After correcting the network or endpoint configuration, retest the connection."
+  },
+  {
+    "article_id": "KB-008",
+    "title": "Handling Expired Authentication Tokens",
+    "category": "authentication",
+    "content": "If an integration stops working because an authentication token has expired, verify the token expiration details and generate a new token using the approved authentication process. Update the integration configuration securely, restart or refresh the connection if required, and verify that authenticated requests succeed."
+  }
+]
